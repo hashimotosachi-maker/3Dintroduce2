@@ -3,12 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>WebAR GLB Model Player</title>
-  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/1.4.2/aframe.min.js"></script>
+  
+  <script src="https://unpkg.com/@ar-js-org/ar.js@3.4.5/aframe/build/aframe-ar.js"></script>
 </head>
 <body style="margin: 0; overflow: hidden;">
 
-  <a-scene embedded arjs="debugUIEnabled: false; sourceType: webcam;">
+  <a-scene embedded arjs="debugUIEnabled: false; sourceType: webcam; videoTexture: true;">
     
     <a-assets>
       <a-asset-item id="my-model" src="asset.glb"></a-asset-item>
